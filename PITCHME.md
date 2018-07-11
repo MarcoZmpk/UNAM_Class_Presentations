@@ -5,7 +5,7 @@
 
 ---
 
-## 1. Importancia del software en la mecatrónica
+### 1. Importancia del software en la mecatrónica
 
 <br>
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 2. Metodología de la programación orientada a objetos
+### 2. Metodología de la programación orientada a objetos
 
 <br>
 
@@ -32,7 +32,7 @@
 
 ---
 
-## 3. Desarrollo de sistemas de cómputo orientados a objetos
+### 3. Desarrollo de sistemas de cómputo orientados a objetos
 
 <br>
 
@@ -41,7 +41,7 @@
 
 ---
 
-## 4. Concepto, uso y aplicaciones de las estructuras de datos compuestas
+### 4. Concepto, uso y aplicaciones de las estructuras de datos compuestas
 
 <br>
 
@@ -50,7 +50,7 @@
 
 ---
 
-## 5. Interfaces gráficas de usuario
+### 5. Interfaces gráficas de usuario
 
 <br>
 
