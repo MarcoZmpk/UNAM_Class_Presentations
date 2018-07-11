@@ -4,13 +4,11 @@
 
 ---
 
-## Tips!
+## Importancia del software en la mecatrónica
 
 <br>
 
-@fa[arrows gp-tip](Press F to go Fullscreen)
-
-@fa[microphone gp-tip](Press S for Speaker Notes)
+### (Objetivo:) El alumno determinará las ventajas que le ofrecen, para su desempeño profesional, tanto el uso de software, como el saber programar adecuadamente.
 
 ---
 
