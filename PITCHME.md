@@ -13,14 +13,12 @@
 
 ---
 
-## Template Features
+## Contenido
 
-- Code Presenting |
-- Repo Source, Static Blocks, GIST |
-- Custom CSS Styling |
-- Slideshow Background Image |
-- Slide-specific Background Images |
-- Custom Logo, TOC, and Footnotes |
+- Diferencia entre programación y codificación |
+- El lugar que ocupa el software en los sistemas mecatrónicos |
+- Clasificación de los lenguajes de programación |
+- Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación |
 
 ---?code=sample/go/server.go&lang=golang&title=Golang File
 
