@@ -8,7 +8,10 @@
 
 <br>
 
-### (Objetivo:) El alumno determinará las ventajas que le ofrecen, para su desempeño profesional, tanto el uso de software, como el saber programar adecuadamente.
+#### Objetivo: 
+<br> 
+
+El alumno determinará las ventajas que le ofrecen, para su desempeño profesional, tanto el uso de software, como el saber programar adecuadamente.
 
 ---
 
