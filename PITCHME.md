@@ -1,8 +1,6 @@
-# White
-
-### Universidad Nacional Autónoma de México
-## Facultad de Ingeniería
-# Técnicas de Programación - Ingeniería Mecatrónica
+## Universidad Nacional Autónoma de México
+### Facultad de Ingeniería
+#### Técnicas de Programación - Ingeniería Mecatrónica
 
 ---
 
