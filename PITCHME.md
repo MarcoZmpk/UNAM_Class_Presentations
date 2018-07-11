@@ -1,4 +1,4 @@
-![Logo](http://arquitectura.unam.mx/uploads/8/1/1/0/8110907/_2634437.png?131)
+---?image=http://arquitectura.unam.mx/uploads/8/1/1/0/8110907/_2634437.png?131 75%&position=bottom&color=#b7410e
 ## Universidad Nacional Autónoma de México
 ### Facultad de Ingeniería
 #### Técnicas de Programación - Ingeniería Mecatrónica
