@@ -1,4 +1,4 @@
-[Custom Logo](http://arquitectura.unam.mx/uploads/8/1/1/0/8110907/_2634437.png?131)
+---?code=http://arquitectura.unam.mx/uploads/8/1/1/0/8110907/_2634437.png?131
 ## Universidad Nacional Autónoma de México
 ### Facultad de Ingeniería
 #### Técnicas de Programación - Ingeniería Mecatrónica
