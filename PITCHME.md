@@ -63,7 +63,7 @@
 
 <br>
 
-@fa[mail gp-contact](zmpk.fi@gmail.com)
+@fa[e-mail gp-contact](zmpk.fi@gmail.com)
 
 @fa[github gp-contact](MarcoZmpk)
 
