@@ -30,9 +30,7 @@
 - Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación |
 
 ---
-#### Diferencia entre programación y codificación 
-
-Link [Diferencia entre programación y codificación](https://www.educba.com/coding-vs-programming/)
+#### [Diferencia entre programación y codificación](https://www.educba.com/coding-vs-programming/)
 
 
 ---
