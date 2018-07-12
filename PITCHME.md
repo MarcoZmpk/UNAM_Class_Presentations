@@ -32,6 +32,7 @@
 ---
 #### [Diferencia entre programación y codificación](https://www.educba.com/coding-vs-programming/)
 
+![Video](https://www.youtube.com/watch?v=k-hYbWs2dPg)
 
 ---
 #### El lugar que ocupa el software en los sistemas mecatrónicos 
