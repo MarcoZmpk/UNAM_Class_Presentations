@@ -4,6 +4,14 @@
 #### Técnicas de Programación - Ingeniería Mecatrónica
 
 ---
+### Temario
+
+- 1. Importancia del software en la mecatrónica |
+- 2. Metodología de la programación orientada a objetos |
+- 3. Desarrollo de sistemas de cómputo orientados a objetos |
+- 4. Concepto, uso y aplicaciones de las estructuras de datos compuestas |
+- 5. Interfaces gráficas de usuario
+---
 
 ### 1. Importancia del software en la mecatrónica
 
@@ -14,7 +22,7 @@
 
 ---
 
-## Contenido
+### Contenido
 
 - Diferencia entre programación y codificación |
 - El lugar que ocupa el software en los sistemas mecatrónicos |
@@ -22,23 +30,23 @@
 - Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación |
 
 ---
-### Diferencia entre programación y codificación 
+#### Diferencia entre programación y codificación 
 
+Link [within](https://www.educba.com/coding-vs-programming/)
+
+
+---
+#### El lugar que ocupa el software en los sistemas mecatrónicos 
 
 
 
 ---
-### El lugar que ocupa el software en los sistemas mecatrónicos 
-
-
-
----
-### Clasificación de los lenguajes de programación 
+#### Clasificación de los lenguajes de programación 
 
 
 
 --- 
-### Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación
+#### Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación
 
 
 
@@ -85,8 +93,8 @@
 
 <br>
 
-@fa[e-mail gp-contact](zmpk.fi@gmail.com)
+@fa[envelope gp-contact](zmpk.fi@gmail.com)
 
 @fa[github gp-contact](MarcoZmpk)
 
-@fa[phone gp-contact] (5543591761)
+@fa[phone gp-contact] 5543591761
