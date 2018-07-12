@@ -22,6 +22,28 @@
 - Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación |
 
 ---
+### Diferencia entre programación y codificación 
+
+
+
+
+---
+### El lugar que ocupa el software en los sistemas mecatrónicos 
+
+
+
+---
+### Clasificación de los lenguajes de programación 
+
+
+
+--- 
+### Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación
+
+
+
+--- 
+
 
 ### 2. Metodología de la programación orientada a objetos
 
