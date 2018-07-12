@@ -6,11 +6,11 @@
 ---
 ### Temario
 
-- 1. Importancia del software en la mecatrónica |
-- 2. Metodología de la programación orientada a objetos |
-- 3. Desarrollo de sistemas de cómputo orientados a objetos |
-- 4. Concepto, uso y aplicaciones de las estructuras de datos compuestas |
-- 5. Interfaces gráficas de usuario
+- Importancia del software en la mecatrónica |
+- Metodología de la programación orientada a objetos |
+- Desarrollo de sistemas de cómputo orientados a objetos |
+- Concepto, uso y aplicaciones de las estructuras de datos compuestas |
+- Interfaces gráficas de usuario |
 ---
 
 ### 1. Importancia del software en la mecatrónica
@@ -32,7 +32,7 @@
 ---
 #### Diferencia entre programación y codificación 
 
-Link [within](https://www.educba.com/coding-vs-programming/)
+Link [Diferencia entre programación y codificación](https://www.educba.com/coding-vs-programming/)
 
 
 ---
