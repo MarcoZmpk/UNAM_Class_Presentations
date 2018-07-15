@@ -41,6 +41,9 @@
 ##### Qué es mecatrónica?
 - The word, mechatronics, is composed of "mecha" from mechianism and the "tronics" from electronics. In other words, thechnologies and developed products will be incorporating electronics more and more into mechanicsms, intimately and organically, and making it impossible to tell where one ends and the other begins. Yasakawa 1996|
 - A mechatronics system in not just a marriege of electrical and mechanical systems and is more than just a control system; it is acomplete integration of all of them. W. Bolton |
+--
+##### Ingeniería Mecatrónica
+![Image](https://en.wikipedia.org/wiki/Mechatronics#/media/File:Mecha_workaround.svg)
 
 ---
 #### Clasificación de los lenguajes de programación 
