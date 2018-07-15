@@ -43,7 +43,7 @@
 - A mechatronics system in not just a marriege of electrical and mechanical systems and is more than just a control system; it is acomplete integration of all of them. W. Bolton |
 ---
 ##### Ingeniería Mecatrónica
-![Logo](https://upload.wikimedia.org/wikipedia/commons/6/6e/Mecha_workaround.svg)&size=auto 90%
+![Logo](https://upload.wikimedia.org/wikipedia/commons/6/6e/Mecha_workaround.svg &size=auto 90%)
 
 ---
 #### Clasificación de los lenguajes de programación 
