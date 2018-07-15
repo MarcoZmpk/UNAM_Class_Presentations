@@ -43,8 +43,10 @@
 - A mechatronics system in not just a marriege of electrical and mechanical systems and is more than just a control system; it is acomplete integration of all of them. W. Bolton |
 
 ---?image=https://upload.wikimedia.org/wikipedia/commons/6/6e/Mecha_workaround.svg&size=auto 90%
-
 ---
+#### [Desarrollo de sistemas mecatrónicos](https://www.researchgate.net/figure/also-points-out-different-domains-that-occur-in-the-development-of-mechatronics-systems_fig1_304578890)
+![Logo](https://www.researchgate.net/profile/Mario_Hirz/publication/304578890/figure/fig1/AS:378323340414976@1467210721206/also-points-out-different-domains-that-occur-in-the-development-of-mechatronics-systems.ppm)
+--
 #### Clasificación de los lenguajes de programación 
 
 
