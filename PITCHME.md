@@ -37,7 +37,10 @@
 ---
 #### El lugar que ocupa el software en los sistemas mecatrónicos 
 
-
+---
+##### Qué es mecatrónica?
+- The word, mechatronics, is composed of "mecha" from mechianism and the "tronics" from electronics. In other words, thechnologies and developed products will be incorporating electronics more and more into mechanicsms, intimately and organically, and making it impossible to tell where one ends and the other begins. Yasakawa 1996|
+- A mechatronics system in not just a marriege of electrical and mechanical systems and is more than just a control system; it is acomplete integration of all of them. W. Bolton |
 
 ---
 #### Clasificación de los lenguajes de programación 
@@ -97,3 +100,12 @@
 @fa[github gp-contact](MarcoZmpk)
 
 @fa[phone gp-contact] 5543591761
+
+---
+#### Referencias
+
+Kyura, N. and Oho, H., "Mechatronics -- and industrial perspective"
+IEEE/ASME Transactions on Mechatronics, Vol. 1, No. 1, 1996, pp. 10-15.
+
+Bolton, W., Mechatronics: Electrical Control Systems in Mechanical and Electrical Engineering
+2nd Ed., Addison-Wesley Longman, Harlow, England 1999
