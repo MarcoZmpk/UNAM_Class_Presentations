@@ -51,9 +51,12 @@
 ![Logo](https://www.idgconnect.com/IMG/777/49777/shutterstock-10338536170938-620x354.jpg?1520919148)
 
 --- 
-#### Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación
+#### [Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación](https://transmitter.ieee.org/top-programming-languages-real-world-applications/)
 
-
+    Python: Behind your favorite website, Python is at work. Coders use this web-based basic scripting language to program the backend of websites like YouTube, Instagram, Pinterest and Quora.
+    C: This language is one of the first high-level languages developed and is fast, structured, portable and has a rich library. All of these features allow C to have applications across every domain in the world of programming. C is used in all the operating systems in your computer and your cellphone and even in programming robots.
+    Java: Java places third on the list and for good reason — it can run on many devices. If you have an Android phone, all of your apps are running Java. Big data technologies are using Java as their language of choice because of its excellent capabilities of compiling and organizing data.
+    C++: This programming language is an object-oriented programming language that incorporates all the features of C. C++ is used for operating systems, games, embedded software, autonomous cars and medical technology, as well as many other applications. Companies like Facebook and Google use C++.
 
 --- 
 
