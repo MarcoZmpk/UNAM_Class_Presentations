@@ -40,16 +40,15 @@
 ---
 ##### Qué es mecatrónica?
 - The word, mechatronics, is composed of "mecha" from mechianism and the "tronics" from electronics. In other words, thechnologies and developed products will be incorporating electronics more and more into mechanicsms, intimately and organically, and making it impossible to tell where one ends and the other begins. Yasakawa 1996|
-- A mechatronics system in not just a marriege of electrical and mechanical systems and is more than just a control system; it is acomplete integration of all of them. W. Bolton |
+- A mechatronics system in not just a marriege of electrical and mechanical systems and is more than just a control system; it is acomplete integration of all of them. W. Bolton 1999|
 
 ---?image=https://upload.wikimedia.org/wikipedia/commons/6/6e/Mecha_workaround.svg&size=auto 90%
 ---
 #### [Desarrollo de sistemas mecatrónicos](https://www.researchgate.net/figure/also-points-out-different-domains-that-occur-in-the-development-of-mechatronics-systems_fig1_304578890)
 ![Logo](https://www.researchgate.net/profile/Mario_Hirz/publication/304578890/figure/fig1/AS:378323340414976@1467210721206/also-points-out-different-domains-that-occur-in-the-development-of-mechatronics-systems.ppm)
 --
-#### Clasificación de los lenguajes de programación 
-
-
+#### [Clasificación de los lenguajes de programación](http://cs.lmu.edu/~ray/notes/pltypes/)
+![Logo](https://www.idgconnect.com/IMG/777/49777/shutterstock-10338536170938-620x354.jpg?1520919148)
 
 --- 
 #### Ejemplos de los distintos tipos de lenguajes de programación y sus áreas de aplicación
