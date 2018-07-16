@@ -46,7 +46,7 @@
 ---
 #### [Desarrollo de sistemas mecatrónicos](https://www.researchgate.net/figure/also-points-out-different-domains-that-occur-in-the-development-of-mechatronics-systems_fig1_304578890)
 ![Logo](https://www.researchgate.net/profile/Mario_Hirz/publication/304578890/figure/fig1/AS:378323340414976@1467210721206/also-points-out-different-domains-that-occur-in-the-development-of-mechatronics-systems.ppm)
---
+---
 #### [Clasificación de los lenguajes de programación](http://cs.lmu.edu/~ray/notes/pltypes/)
 ![Logo](https://www.idgconnect.com/IMG/777/49777/shutterstock-10338536170938-620x354.jpg?1520919148)
 
