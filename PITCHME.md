@@ -129,9 +129,12 @@ class program
 
 ---
 
-@fa[github]
--[Git / GitHub](https://services.github.com/on-demand/downloads/es_ES/github-git-cheat-sheet.pdf)
+@fa[github fa-2x fa-spin]
 
+
+-[Git / GitHub](https://www.github.com)
+-[Hello World](https://guides.github.com/activities/hello-world/)
+-[Cheat Sheet](https://services.github.com/on-demand/downloads/es_ES/github-git-cheat-sheet.pdf)
 
 ---
 #### Encapsulación, herencia y polimorfismo
