@@ -6,7 +6,7 @@
 ---
 ### Temario
 
-- @color[gray]Importancia del software en la mecatrónica |
+- @color[gray](Importancia del software en la mecatrónica) |
 - Metodología de la programación orientada a objetos |
 - Desarrollo de sistemas de cómputo orientados a objetos |
 - Concepto, uso y aplicaciones de las estructuras de datos compuestas |
