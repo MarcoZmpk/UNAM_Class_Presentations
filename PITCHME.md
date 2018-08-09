@@ -137,6 +137,15 @@ class program
 -[Cheat Sheet](https://services.github.com/on-demand/downloads/es_ES/github-git-cheat-sheet.pdf)
 
 ---
+### Questions?
+
+<br>
+
+@fa[envelope gp-contact](zmpk.fi@gmail.com)
+
+@fa[github gp-contact](MarcoZmpk)
+
+---
 #### Encapsulación, herencia y polimorfismo
 
 ---
