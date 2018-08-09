@@ -44,22 +44,40 @@ El alumno descubrirá los fundamentos del paradigma de programación orientado a
 - Expresiones
 
 ---
+##### Say Hello
+
+```
+using System;
+
+class Hello
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World");
+		Console.Read();
+    }
+}
+```
+
+---
 ##### Ejemplos Tipos y variables [int]
 
 
-````
+```
 class Program
 { 
    static void Main(string[] args) 
    {
       int num=30;
-      Console.Write(num);  
+      Console.Write(num);
+	  Console.Read();
    }
 }
 ```
 
 ---
-##### Ejemplos Tipos y variables []
+##### Ejemplos Tipos y variables [double]
+
 
 ```
  class Program
@@ -68,12 +86,46 @@ class Program
   {
    double num=30.33;
    Console.Write(num); 
-   
+   Console.Read();
   }
 ```
+---
+##### Ejemplos Tipos y variables [Boolean]
 
+
+```
+class Program
+{ 
+   static void Main(string[] args) 
+   {
+      Boolean status=true;
+      Console.Write(status);
+	  Console.Read();
+   }
+}
+
+```
 
 ---
+
+##### Ejemplos Tipos y variables [String]
+
+
+```
+class program
+{
+   static void Main(string[] args)
+   {
+      String message="Hello";
+      Console.Write(message);
+	  Console.Read();
+   }
+}
+
+```
+
+---
+
 #### Encapsulación, herencia y polimorfismo
 
 ---
