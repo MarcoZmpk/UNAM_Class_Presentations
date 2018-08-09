@@ -37,11 +37,11 @@ El alumno descubrirá los fundamentos del paradigma de programación orientado a
 - Manejo de archivos (escritura, lectura, acceso secuencial, acceso aleatorio)|
 
 ---
-##### C#
+##### C"#"
 
 - [Un paseo por C#](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
 - Tipos y variables
-- Expresiones
+- [Expresiones](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/statement-keywords)
 
 ---
 ##### Say Hello
@@ -123,6 +123,9 @@ class program
 }
 
 ```
+---
+
+- [Instrucciones](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/statement-keywords)
 
 ---
 
