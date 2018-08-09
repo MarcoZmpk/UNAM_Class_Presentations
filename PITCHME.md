@@ -108,3 +108,14 @@ El alumno descubrirá los fundamentos del paradigma de programación orientado a
 
 ---
 #### Referencias
+<<<<<<< HEAD
+
+Kyura, N. and Oho, H., "Mechatronics -- and industrial perspective"
+IEEE/ASME Transactions on Mechatronics, Vol. 1, No. 1, 1996, pp. 10-15.
+
+Bolton, W., Mechatronics: Electrical Control Systems in Mechanical and Electrical Engineering
+2nd Ed., Addison-Wesley Longman, Harlow, England 1999
+
+---
+=======
+>>>>>>> 69fcc5dbf5fc9e516ff33937d7c57ab6e593131b
