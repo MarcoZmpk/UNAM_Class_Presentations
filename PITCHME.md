@@ -46,7 +46,6 @@ El alumno descubrirá los fundamentos del paradigma de programación orientado a
 ---
 ##### Ejemplos Tipos y variables [int]
 
-@css[class-name](
 class Program
 { 
    static void Main(string[] args) 
@@ -55,7 +54,6 @@ class Program
       Console.Write(num);  
    }
 }
-)
 
 ---
 
