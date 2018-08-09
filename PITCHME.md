@@ -37,7 +37,27 @@ El alumno descubrirá los fundamentos del paradigma de programación orientado a
 - Manejo de archivos (escritura, lectura, acceso secuencial, acceso aleatorio)|
 
 ---
-#### Clases y objetos. Constructores, atributos y métodos
+##### C#
+
+- [Un paseo por C#](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
+- Tipos y variables
+- Expresiones
+
+---
+##### Ejemplos Tipos y variables [int]
+
+@css[class-name](
+class Program
+{ 
+   static void Main(string[] args) 
+   {
+      int num=30;
+      Console.Write(num);  
+   }
+}
+)
+
+---
 
 ---
 #### Encapsulación, herencia y polimorfismo
@@ -59,7 +79,6 @@ El alumno descubrirá los fundamentos del paradigma de programación orientado a
 
 ---
 #### Manejadores de eventos
-
 
 ---
 #### Construcción de bibliotecas y reutilización de código
@@ -108,14 +127,4 @@ El alumno descubrirá los fundamentos del paradigma de programación orientado a
 
 ---
 #### Referencias
-<<<<<<< HEAD
-
-Kyura, N. and Oho, H., "Mechatronics -- and industrial perspective"
-IEEE/ASME Transactions on Mechatronics, Vol. 1, No. 1, 1996, pp. 10-15.
-
-Bolton, W., Mechatronics: Electrical Control Systems in Mechanical and Electrical Engineering
-2nd Ed., Addison-Wesley Longman, Harlow, England 1999
-
 ---
-=======
->>>>>>> 69fcc5dbf5fc9e516ff33937d7c57ab6e593131b
