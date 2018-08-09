@@ -45,6 +45,8 @@ El alumno descubrirá los fundamentos del paradigma de programación orientado a
 
 ---
 ##### Ejemplos Tipos y variables [int]
+
+
 ````
 class Program
 { 
@@ -57,6 +59,19 @@ class Program
 ```
 
 ---
+##### Ejemplos Tipos y variables []
+
+```
+ class Program
+ { 
+  static void Main(string[] args) 
+  {
+   double num=30.33;
+   Console.Write(num); 
+   
+  }
+```
+
 
 ---
 #### Encapsulación, herencia y polimorfismo
