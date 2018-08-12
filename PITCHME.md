@@ -140,14 +140,29 @@ class program
 ** Say hello 2 **
 
 ```
-using System; // using keyword is used to include the System namespace in the program
+/* using keyword is used to include the System 
+   namespace in the program */
+using System; // 
 
-namespace HelloWorldApplication { // A namespace is a collection of classes
+/* A namespace is a collection of classes
+namespace HelloWorldApplication {
+
+   /* Classes generally contain multiple methods. 
+   Methods define the behavior of the class. 
+   However, the HelloWorld class has only one method Main.*/
    class HelloWorld { // class declaration. 
-   /* Classes generally contain multiple methods. Methods define the behavior of the class. However, the HelloWorld class has only one method Main.*/
-      static void Main(string[] args) { // Main method, which is the entry point for all C# programs.
-         Console.WriteLine("Hello World"); /* WriteLine is a method of the Console class defined in the System namespace. This statement causes the message "Hello, World!" to be displayed on the screen.*/
-         Console.ReadKey(); /*This makes the program wait for a key press and it prevents the screen from running and closing quickly*/
+   
+      // Main method, which is the entry point for all C# programs.
+      static void Main(string[] args) {
+	  
+	     /* WriteLine is a method of the Console class defined in 
+		 the System namespace. This statement causes the message 
+		 "Hello, World!" to be displayed on the screen.*/
+         Console.WriteLine("Hello World");
+
+		 /*This makes the program wait for a key press and it prevents 
+		 the screen from running and closing quickly*/
+         Console.ReadKey(); 
       }
    }
 }
