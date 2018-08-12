@@ -144,7 +144,7 @@ class program
    namespace in the program */
 using System; // 
 
-/* A namespace is a collection of classes
+/* A namespace is a collection of classes*/
 namespace HelloWorldApplication {
 
    /* Classes generally contain multiple methods. 
@@ -152,16 +152,19 @@ namespace HelloWorldApplication {
    However, the HelloWorld class has only one method Main.*/
    class HelloWorld { // class declaration. 
    
-      // Main method, which is the entry point for all C# programs.
+      /*Main method, which is the entry point 
+	  for all C# programs*/
       static void Main(string[] args) {
 	  
-	     /* WriteLine is a method of the Console class defined in 
-		 the System namespace. This statement causes the message 
+	     /* WriteLine is a method of the Console class 
+		 defined in the System namespace. 
+		 This statement causes the message 
 		 "Hello, World!" to be displayed on the screen.*/
          Console.WriteLine("Hello World");
 
-		 /*This makes the program wait for a key press and it prevents 
-		 the screen from running and closing quickly*/
+		 /*This makes the program wait for a key press 
+		 and it prevents the screen from running and 
+		 closing quickly*/
          Console.ReadKey(); 
       }
    }
