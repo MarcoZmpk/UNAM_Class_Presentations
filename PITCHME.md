@@ -170,6 +170,58 @@ namespace HelloWorldApplication {
    }
 }
 ```
+---
+
+### Contenido
+
+- Clases y objetos. Constructores, atributos y métodos
+
+---
+###Class
+
+Clase en C#
+
+Cuando se define una clase (*class*), define un *modelo* para un tipo de datos. Esto en realidad no define ningún dato, pero define lo que significa el nombre de clase. Es decir, en qué consiste el objeto de la clase y qué operaciones se pueden realizar en ese objeto. Los objetos son instancias de una clase. Los métodos y variables que constituyen una clase se llaman miembros de la clase.
+
+---
+### Object
+
+Objeto en C#
+
+Un objeto es una entidad. Esto quiere decir que puede "verse" y "sentirse".
+---
+### Method
+
+Método en C#
+
+Un método define el comportamiento de los objetos de una clase.
+
+---
+*Hands on classes*
+
+Defina las clases para los siguientes elementos
+
+* Perro
+* Coche
+* Humano
+
+---
+### Constructor
+
+Un constructor en C#
+
+Es una miembro especial de la clase que es ejecutada cuando se crea un nuevo objeto de la clase.
+Un Constructor tiene exactamente el mismo nombre que la clase que la define y no tiene ningún tipo de retorno.
+Un constructor parametrizado es aquel que es utilizado para asignar valores iniciales a un objeto al tiempo de su creación.
+
+---
+*Hands on classes*
+
+Defina los constructores para las clases previamente creadas
+
+* Perro
+* Coche
+* Humano
 
 ---
 ### Questions?
