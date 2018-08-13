@@ -129,7 +129,7 @@ class program
 
 ---
 
-@fa[github fa-2x fa-spin]
+@fa[github fa-4x fa-spin]
 
 
 -[Git / GitHub](https://www.github.com)
@@ -177,11 +177,11 @@ namespace HelloWorldApplication {
 - Clases y objetos. Constructores, atributos y métodos
 
 ---
-###Class
+### Class
 
 Clase en C#
 
-Cuando se define una clase (*class*), define un *modelo* para un tipo de datos. Esto en realidad no define ningún dato, pero define lo que significa el nombre de clase. Es decir, en qué consiste el objeto de la clase y qué operaciones se pueden realizar en ese objeto. Los objetos son instancias de una clase. Los métodos y variables que constituyen una clase se llaman miembros de la clase.
+Cuando se define una clase (**class**), define un *modelo* para un tipo de datos. Esto en realidad no define ningún dato, pero define lo que significa el nombre de clase. Es decir, en qué consiste el objeto de la clase y qué operaciones se pueden realizar en ese objeto. Los objetos son instancias de una clase. Los métodos y variables que constituyen una clase se llaman miembros de la clase.
 
 ---
 ### Object
