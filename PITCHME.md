@@ -203,7 +203,6 @@ Defina las clases para los siguientes elementos
 
 * Perro
 * Coche
-* Humano
 
 ---
 ### Constructor
@@ -221,7 +220,20 @@ Defina los constructores para las clases previamente creadas
 
 * Perro
 * Coche
-* Humano
+
+---
+---
+### *Practica 1*
+
+1. *Objetivos de aprendizaje* 
+ 
+I. Objetivos generales:  Entender la diferencia entre clase y objeto. 
+II. Objetivos específicos:
+ 
+* Aprender a diseñar clases. 
+* Entender el funcionamiento de los constructores. 
+* Identificar los atributos y los métodos. 
+* Aprender a crear objetos. 
 
 ---
 ### Questions?
