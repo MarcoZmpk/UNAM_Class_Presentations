@@ -222,7 +222,6 @@ Defina los constructores para las clases previamente creadas
 * Coche
 
 ---
----
 ### *Practica 1*
 
 1. *Objetivos de aprendizaje* 
