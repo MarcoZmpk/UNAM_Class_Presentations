@@ -235,6 +235,10 @@ II. Objetivos específicos:
 * Aprender a crear objetos. 
 
 ---
+
+### *Examen 1*
+
+---
 ### Questions?
 
 <br>
