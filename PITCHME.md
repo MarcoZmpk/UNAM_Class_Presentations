@@ -287,38 +287,49 @@ La herencia nos permite definir a una clase en términos de otra clase, lo que h
 ```
 using System;
 
-namespace InheritanceApplication {
-   class Shape {
-      public void setWidth(int w) {
-         width = w;
-      }
-      public void setHeight(int h) {
-         height = h;
-      }
-      protected int width;
-      protected int height;
-   }
-
-   // Derived class
-   class Rectangle: Shape {
-      public int getArea() { 
-         return (width * height); 
-      }
-   }
-   class RectangleTester {
+namespace AplicaciónHerencia {
+   class ProbadorDeRectangulo {
       static void Main(string[] args) {
-         Rectangle Rect = new Rectangle();
+         Rectangulo Rect = new Rectangulo();
 
-         Rect.setWidth(5);
-         Rect.setHeight(7);
+         Rect.setAncho(5);
+         Rect.setAlto(7);
 
          // Print the area of the object.
-         Console.WriteLine("Total area: {0}",  Rect.getArea());
+         Console.WriteLine("Área Total: {0}",  Rect.getArea());
          Console.ReadKey();
+      }
+   }
+   
+   class Forma {
+      protected int ancho;
+      protected int alto;
+	  
+      public void setAncho(int w) {
+         ancho = w;
+      }
+      public void setAlto(int h) {
+         alto = h;
+      }
+   }
+
+   // Clase derivada
+   class Rectangulo: Forma {
+      public int getArea() { 
+         return (ancho * alto); 
       }
    }
 }
 ``` 
+---
+##### *Polimorfismo*
+
+ El polimorfismo suele considerarse el tercer pilar de la programación orientada a objetos, después de la encapsulación y la herencia. Polimorfismo es una palabra griega que significa "con muchas formas" y tiene dos aspectos diferentes:
+
+    En tiempo de ejecución, los objetos de una clase derivada pueden ser tratados como objetos de una clase base en lugares como parámetros de métodos y colecciones o matrices. Cuando ocurre, el tipo declarado del objeto ya no es idéntico a su tipo en tiempo de ejecución.
+
+    Las clases base pueden definir e implementar métodosvirtuales, y las clases derivadas pueden invalidarlos, lo que significa que pueden proporcionar su propia definición e implementación. En tiempo de ejecución, cuando el código de cliente llama al método, CLR busca el tipo en tiempo de ejecución del objeto e invoca esa invalidación del método virtual. Por lo tanto, en el código fuente puede llamar a un método en una clase base y hacer que se ejecute una versión del método de la clase derivada.
+
 
 ---
 ### *Examen 1 08/16/2018* 
