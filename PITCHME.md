@@ -284,7 +284,7 @@ La herencia nos permite definir a una clase en términos de otra clase, lo que h
 * Se introducen conceptos como *superclase* y *subclase*
 ---
 
-´´´
+```
 using System;
 
 namespace InheritanceApplication {
@@ -318,7 +318,7 @@ namespace InheritanceApplication {
       }
    }
 }
-´´´ 
+``` 
 
 ---
 ### *Examen 1 08/16/2018* 
