@@ -248,11 +248,11 @@ La encapsulación se define 'como el proceso de adjuntar uno o más elementos de
 La encapsulación es implementada utilizando *access specifiers*. 
 An access specifier defines the scope and visibility of a class member. C# supports the following access specifiers −
 
-    *Public
-    *Private
-    *Protected
-    *Internal
-    *Protected internal
+*Public
+*Private
+*Protected
+*Internal
+*Protected internal
 
 ---
 
