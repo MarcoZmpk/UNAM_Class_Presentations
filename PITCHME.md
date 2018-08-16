@@ -235,6 +235,26 @@ II. Objetivos específicos:
 * Aprender a crear objetos. 
 
 ---
+#### Encapsulación, herencia y polimorfismo
+
+Encapsulación
+
+La encapsulación se define 'como el proceso de adjuntar uno o más elementos dentro de un paquete físico o lógico'. La encapsulación, en la metodología de programación orientada a objetos, impide el acceso a los detalles de implementación.
+
+---
+
+##### Encapsulación
+
+La encapsulación es implementada utilizando *access specifiers*. 
+An access specifier defines the scope and visibility of a class member. C# supports the following access specifiers −
+
+    *Public
+    *Private
+    *Protected
+    *Internal
+    *Protected internal
+
+---
 
 ### *Examen 1 08/16/2018* 
 
@@ -247,8 +267,6 @@ II. Objetivos específicos:
 
 @fa[github gp-contact](MarcoZmpk)
 
----
-#### Encapsulación, herencia y polimorfismo
 
 ---
 #### Sobrecarga de funciones
