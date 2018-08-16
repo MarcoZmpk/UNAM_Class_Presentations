@@ -236,7 +236,7 @@ II. Objetivos específicos:
 
 ---
 
-### *Examen 1*
+### *Examen 1 08/16/2018* 
 
 ---
 ### Questions?
