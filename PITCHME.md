@@ -326,13 +326,16 @@ namespace AplicaciónHerencia {
 
  El polimorfismo suele considerarse el tercer pilar de la programación orientada a objetos, después de la encapsulación y la herencia. Polimorfismo es una palabra griega que significa "con muchas formas" y tiene dos aspectos diferentes:
 
-    En tiempo de ejecución, los objetos de una clase derivada pueden ser tratados como objetos de una clase base en lugares como parámetros de métodos y colecciones o matrices. Cuando ocurre, el tipo declarado del objeto ya no es idéntico a su tipo en tiempo de ejecución.
-
-    Las clases base pueden definir e implementar métodosvirtuales, y las clases derivadas pueden invalidarlos, lo que significa que pueden proporcionar su propia definición e implementación. En tiempo de ejecución, cuando el código de cliente llama al método, CLR busca el tipo en tiempo de ejecución del objeto e invoca esa invalidación del método virtual. Por lo tanto, en el código fuente puede llamar a un método en una clase base y hacer que se ejecute una versión del método de la clase derivada.
-
+ En tiempo de ejecución, los objetos de una clase derivada pueden ser tratados como objetos de una clase base en lugares como parámetros de métodos y colecciones o matrices. Cuando ocurre, el tipo declarado del objeto ya no es idéntico a su tipo en tiempo de ejecución.
 
 ---
 ### *Examen 1 08/16/2018* 
+
+Desarrollar un programa en la consola de C# para realizar la suma y la divición de dos números, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
+* El programa debe de contener el uso de clases, objetos, métodos y constructores.
+* Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
+* Enviar el link al repositorio mediante el classroom de google.
+* La calificación del examen se aplicará a la práctica 0. 
 
 ---
 ### Questions?
