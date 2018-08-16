@@ -235,7 +235,7 @@ II. Objetivos específicos:
 * Aprender a crear objetos. 
 
 ---
-#### Encapsulación, herencia y polimorfismo
+#### *Encapsulación, herencia y polimorfismo*
 
 Encapsulación
 
@@ -243,7 +243,7 @@ La encapsulación se define 'como el proceso de adjuntar uno o más elementos de
 
 ---
 
-##### Encapsulación
+##### *Encapsulación*
 
 La encapsulación es implementada utilizando *access specifiers*. 
 Un *access specifier* define el alcance y la visibilidad de un miembro de la clase. C# soporta los siguiente *access specifier*
@@ -254,7 +254,7 @@ Un *access specifier* define el alcance y la visibilidad de un miembro de la cla
 * Internal
 * Protected internal
 ---
-##### Encapsulación
+##### *Encapsulación*
 
 ***Public and Private***
 
@@ -262,21 +262,21 @@ Un *access specifier* define el alcance y la visibilidad de un miembro de la cla
 
 *Private* Los miembros privados sólo son accesibles dentro de la clase en la que se definen. Es por tanto el modificador más restrictivo.
 ---
-##### Encapsulación
+##### *Encapsulación*
 
 **Internal**
 
 El modificador internal indica que aquellos miembros o tipos que se hayan definido con este modificador de acceso sólo serán accesibles desde los archivos del mismo ensamblado.
 
 ---
-##### Encapsulación
+##### *Encapsulación*
 
 **Protected and Protected Internal**
 
 El modificador protected indica que sólo la clase en la que se ha utilizado el modificador y sus clases derivadas tendrán acceso al miembro o tipo definido como protected.
 El modificador protected internal permite a la clase esconder sus variables y sus funciones de otra clase, objetos y funciones, excepto a la clase hijo de la misma aplicación.
 ---
-##### Herencia
+##### *Herencia*
 
 La herencia nos permite definir a una clase en términos de otra clase, lo que hace fácil crear y mantener una aplicación. Esto también provee la oportunidad de reusar funcionalidad de código y acelara el tiempo de implementación.
 * Se utiliza cuando existen clases que comparten muchas de sus características
@@ -284,7 +284,7 @@ La herencia nos permite definir a una clase en términos de otra clase, lo que h
 * Se introducen conceptos como *superclase* y *subclase*
 ---
 
-'''
+´´´
 using System;
 
 namespace InheritanceApplication {
@@ -318,7 +318,7 @@ namespace InheritanceApplication {
       }
    }
 }
-'''
+´´´ 
 
 ---
 ### *Examen 1 08/16/2018* 
