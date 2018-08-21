@@ -287,7 +287,7 @@ La herencia nos permite definir a una clase en términos de otra clase, lo que h
 ```
 using System;
 
-namespace AplicaciónHerencia {
+namespace AplicacionHerencia {
    class ProbadorDeRectangulo {
       static void Main(string[] args) {
          Rectangulo Rect = new Rectangulo();
@@ -322,20 +322,93 @@ namespace AplicaciónHerencia {
 }
 ``` 
 ---
-##### *Polimorfismo*
 
- El polimorfismo suele considerarse el tercer pilar de la programación orientada a objetos, después de la encapsulación y la herencia. Polimorfismo es una palabra griega que significa "con muchas formas" y tiene dos aspectos diferentes:
-
- En tiempo de ejecución, los objetos de una clase derivada pueden ser tratados como objetos de una clase base en lugares como parámetros de métodos y colecciones o matrices. Cuando ocurre, el tipo declarado del objeto ya no es idéntico a su tipo en tiempo de ejecución.
-
----
 ### *Examen 1 08/16/2018* 
 
 Desarrollar un programa en la consola de C# para realizar la suma y la divición de dos números, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
 * El programa debe de contener el uso de clases, objetos, métodos y constructores.
 * Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
 * Enviar el link al repositorio mediante el classroom de google.
-* La calificación del examen se aplicará a la práctica 0. 
+* La calificación del examen se aplicará a la práctica 0.
+---
+
+##### [Polimorfismo](http://www.itnuevolaredo.edu.mx/takeyas/Apuntes/POO/Apuntes/04.-Polimorfismo.pdf)
+
+Es la habilidad que poseen los objetos para reaccionar de modo diferente ante los mismos mensajes.
+
+El polimorfismo se refiere a la posibilidad de definir múltiples clases con funcionalidad diferente, pero con métodos o propiedades denominados de forma idéntica, que pueden utilizarse de manera intercambiable mediante código cliente en tiempo de ejecución.
+
+En C# el polimorfismo está íntimamente relacionado con la sobrecarga y métodos virtuales.
+
+---
+
+##### Ejemplo 1
+
+``` 
+using System;
+
+namespace PolymorphismApplication {
+   class Printdata {
+      void print(int i) {
+         Console.WriteLine("Printing int: {0}", i );
+      }
+      void print(double f) {
+         Console.WriteLine("Printing float: {0}" , f);
+      }
+      void print(string s) {
+         Console.WriteLine("Printing string: {0}", s);
+      }
+      static void Main(string[] args) {
+         Printdata p = new Printdata();
+         
+         // Call print to print integer
+         p.print(5);
+         
+         // Call print to print float
+         p.print(500.263);
+         
+         // Call print to print string
+         p.print("Hello C++");
+         Console.ReadKey();
+      }
+   }
+}
+``` 
+
+---
+##### Ejemplo 2
+
+``` 
+using System;
+
+namespace PolymorphismApplication {
+   abstract class Shape {
+      public abstract int area();
+   }
+   
+   class Rectangle:  Shape {
+      private int length;
+      private int width;
+      
+      public Rectangle( int a = 0, int b = 0) {
+         length = a;
+         width = b;
+      }
+      public override int area () { 
+         Console.WriteLine("Rectangle class area :");
+         return (width * length); 
+      }
+   }
+   class RectangleTester {
+      static void Main(string[] args) {
+         Rectangle r = new Rectangle(10, 7);
+         double a = r.area();
+         Console.WriteLine("Area: {0}",a);
+         Console.ReadKey();
+      }
+   }
+}
+``` 
 
 ---
 ### Questions?
