@@ -409,7 +409,102 @@ namespace PolymorphismApplication {
    }
 }
 ``` 
+---
+#### Métodos, sobrecarga y sobreescritura
 
+Creación de métodos, sobrecarga y sobreescritura.
+
+Son procedimientos o funciones definidos dentro de una CLASE. Los métodos pueden manejar los campos de la clase incluso si son privados.
+
+La sobrecarga es la creación dentro de la clase, de un grupo de métodos que tienen el mismo nombre pero con un número de parámetros distinto y/o bien distintos tipos de datos.
+---
+
+**Ejemplo 1**
+
+```
+public void visualización () {
+  MessageBox.Show("Sr. "+Apellido+" "+Nombre+" nacido el "+FechaNac); 
+}
+ 
+public void visualización (string idioma) {
+  switch (idioma) {
+    case "es":  MessageBox.Show("Sr. "+Apellido+" "+Nombre+" nacido el "+FechaNac); break;
+    case "en":  MessageBox.Show("Mr. "+Apellido+" "+Nombre+" was born "+FechaNac); break;
+  }
+}
+```
+---
+
+Sabemos que las clases derivadas heredan las propiedades y métodos de su clase base. Se pueden usar sin ninguna modificación, pero sí el método no está adaptado a la nueva clase podemos sobrescribirlo. Para ello utilizamos la palabra reservada override. También es obligatorio que permitir la sobrescritura de mediante el de la palabra reservada virtual. Esto se utiliza para asegurar el polimorfismo entre las clases.
+
+---
+Ejemplo 2
+```
+public override void visualización () {
+  MessageBox.Show("Sr. "+Apellido+" "+Nombre+" nacido el "+FechaNac+" cobra "+Salario+".-€uros/mes."); 
+}
+ 
+public sealead override void visualización () {
+  base.visualizacion();
+  MessageBox.Show("y cobra "+Salario+".-MXP/mes."); 
+```
+
+---
+Ejemplo de método abstracto
+
+```
+  public abstract string EstadoCivil();
+  //de este método no hay implementación sólo definición.
+  // la clase también estará marcada como abstracta.
+```
+
+---
+
+Métodos de extensión
+
+Los métodos de extensión permiten añadir funcionalidades a una clase ya definida sin tener que modificar el código de esta clase. Se deben respetar las siguientes reglas:
+
+* Pueden ser de tipo procedimientos o función. NUNCA propiedad.
+* El primer parámetro irá precedido de la palabra this. La palabra clave this hace referencia a la instancia actual de la clase ,pero también se utiliza como modificador del primer parámetro de un método de extensión.
+* El tipo del primer parámetro del método determina el tipo extendido por este método.
+* En el momento de la ejecución, éste primer parámetro representa la instancia de la clase sobre la cual se llama el método.
+* Se deben definir una clase static.
+* Ellos mismos deben ser static.
+
+```
+static class ExtesionPersona {
+    public static void presentacion(this Persona p) {
+        Console.WriteLine("Apellido: {0}", p.apellido);
+        Console.WriteLine("Nombre: {0}",p.nombre);
+        Console.writeLine("Fecha de nacimiento: {0}", p.fecha_naci);
+    }
+}
+```
+---
+
+Los métodos de extensión también también se pueden definir para los tipos básicos del Framework, como por ejemplo la clase string. El siguiente código añade a la clase string un método que permite convertir el primer carácter de una cadena en mayúsculas.
+
+```
+public static class ExtensionString
+{
+    public static string PrimeroMayusculas(this String s)
+    {
+        if ((s == null) || (s.Length == 0))
+        {
+            return s;
+        }
+        else if (s.Length == 1)
+        {
+ 
+            return s.ToUpper();
+        }
+        else
+        {
+            return s.Substring(0, 1).ToUpper() + s.Substring(1, s.Length - 1);
+        }
+    }
+}
+```
 ---
 ### Questions?
 
@@ -418,10 +513,6 @@ namespace PolymorphismApplication {
 @fa[envelope gp-contact](zmpk.fi@gmail.com)
 
 @fa[github gp-contact](MarcoZmpk)
-
-
----
-#### Sobrecarga de funciones
 
 ---
 #### Sobrecarga de operadores
