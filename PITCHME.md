@@ -506,6 +506,69 @@ public static class ExtensionString
 }
 ```
 ---
+```
+class Program
+{
+    static void Main(string[] args)
+	{
+	    Console.WriteLine(5.ElevadoALa(3));
+		Console.WriteLine(7.ElevadoALa(2));
+		15.Doble();
+		Console.Read();
+	}
+	
+	public static class IntegerExtensionsMethods
+	{
+	    public static double ElevadoALa(this int valor, int exponente)
+		{
+		    return Math.Pow(valor, exponente);
+		}
+		
+		public static double Doble(this int valor)
+		{
+		    return valor *2;
+		}
+	}
+}
+```
+---
+##### [Sobrecarga de Operadores](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/statements-expressions-operators/overloadable-operators)
+```
+public class Persona
+{
+    public Persona(double salario)
+	{
+	    Salario = salario;
+	}
+	
+	public static double operator+(Persona x, Persona y)
+	{
+	    return x.Salario + y.Salario;
+	}
+	
+	public double Salario {get;set;}
+}
+
+public class Program
+{
+    public static void Maid(string[] arg)
+	{
+	    Persona juan = new Persona(1000.0)
+		Persona ana = new Persona(500.0)
+		
+		double salarioTotal = juan + ana;
+		
+		Console.WriteLine(salarioTotal);
+		Console.Read();
+	}
+}
+
+```
+---
+
+[Otros ejemplos] (https://www.tutorialesprogramacionya.com/csharpya/detalleconcepto.php?codigo=197&inicio=60)
+
+---
 ### Questions?
 
 <br>
