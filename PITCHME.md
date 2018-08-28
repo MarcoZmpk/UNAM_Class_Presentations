@@ -566,15 +566,15 @@ public class Program
 ```
 ---
 
-[Otros ejemplos] (https://www.tutorialesprogramacionya.com/csharpya/detalleconcepto.php?codigo=197&inicio=60)
+[Otros ejemplos](https://www.tutorialesprogramacionya.com/csharpya/detalleconcepto.php?codigo=197&inicio=60)
 
 ---
 ### *Examen 2 08/28/2018* 
 
-Desarrollar un programa en la consola de C# para obtener el área de un triangulo, un cuadrado y un circulo, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
-* El programa debe de contener el uso de clases, objetos, métodos, constructores, herencia y polimorfismo.
-* Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
-* Enviar el link al repositorio mediante el classroom de google.
+######Desarrollar un programa en la consola de C# para obtener el área de un triangulo, un cuadrado y un circulo, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
+######* El programa debe de contener el uso de clases, objetos, métodos, constructores, herencia y polimorfismo.
+######* Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
+######* Enviar el link al repositorio mediante el classroom de google.
 
 ---
 ### Questions?
