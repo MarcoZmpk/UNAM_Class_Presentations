@@ -586,7 +586,7 @@ public class Program
 @fa[github gp-contact](MarcoZmpk)
 
 ---
-####[Manejo de errores y de excepciones](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm)
+#### [Manejo de errores y de excepciones](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm)
 
 An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero.
 
@@ -603,7 +603,7 @@ Exceptions provide a way to transfer control from one part of a program to anoth
     **throw** − A program throws an exception when a problem shows up. This is done using a throw keyword.
 
 ---
-#####Syntax
+##### Syntax
 
 ```
 try {
@@ -620,7 +620,7 @@ try {
 ```
 
 ---
-#####[Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
+##### [Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
 
 Excepción | Description
 ----------|------------
