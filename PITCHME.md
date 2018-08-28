@@ -569,6 +569,14 @@ public class Program
 [Otros ejemplos] (https://www.tutorialesprogramacionya.com/csharpya/detalleconcepto.php?codigo=197&inicio=60)
 
 ---
+### *Examen 2 08/28/2018* 
+
+Desarrollar un programa en la consola de C# para obtener el área de un triangulo, un cuadrado y un circulo, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
+* El programa debe de contener el uso de clases, objetos, métodos, constructores, herencia y polimorfismo.
+* Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
+* Enviar el link al repositorio mediante el classroom de google.
+
+---
 ### Questions?
 
 <br>
@@ -578,10 +586,54 @@ public class Program
 @fa[github gp-contact](MarcoZmpk)
 
 ---
-#### Sobrecarga de operadores
+####[Manejo de errores y de excepciones](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm)
+
+An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero.
+
+Exceptions provide a way to transfer control from one part of a program to another. C# exception handling is built upon four keywords: **try**, **catch**, **finally**, and **throw**.
 
 ---
-#### Manejo de errores y de excepciones
+
+    **try** − A try block identifies a block of code for which particular exceptions is activated. It is followed by one or more catch blocks.
+
+    **catch** − A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The catch keyword indicates the catching of an exception.
+
+    **finally** − The finally block is used to execute a given set of statements, whether an exception is thrown or not thrown. For example, if you open a file, it must be closed whether an exception is raised or not.
+
+    **throw** − A program throws an exception when a problem shows up. This is done using a throw keyword.
+
+---
+#####Syntax
+
+```
+try {
+   // statements causing exception
+} catch( ExceptionName e1 ) {
+   // error handling code
+} catch( ExceptionName e2 ) {
+   // error handling code
+} catch( ExceptionName eN ) {
+   // error handling code
+} finally {
+   // statements to be executed
+}
+```
+
+---
+#####[Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
+
+Excepción | Description
+----------|------------
+ArithmeticException | Una clase base para las excepciones que se producen durante las operaciones aritméticas, como DivideByZeroException y OverflowException.
+ArrayTypeMismatchException | Se inicia cuando una matriz no puede almacenar un elemento determinado porque el tipo real del elemento es incompatible con el tipo real de la matriz.
+DivideByZeroException | Se inicia cuando se intenta dividir un valor entero entre cero.
+IndexOutOfRangeException | Se inicia cuando se intenta indexar una matriz y el índice es menor que cero o queda fuera de los límites de la matriz.
+InvalidCastException | Se inicia cuando se produce un error en una conversión explícita de un tipo base en una interfaz o un tipo derivado en tiempo de ejecución.
+NullReferenceException | Se inicia cuando se intenta hacer referencia a un objeto cuyo valor es null.
+OutOfMemoryException | Se inicia cuando se produce un error al intentar asignar memoria con el operador new. Indica que se ha agotado la memoria disponible para el entorno Common Language Runtime.
+OverflowException | Se inicia cuando se desborda una operación aritmética en un contexto checked.
+StackOverflowException | Se inicia cuando se agota la pila de ejecución por tener demasiadas llamadas a métodos pendientes. Normalmente, indica una recursividad muy profunda o infinita.
+TypeInitializationException | Se inicia cuando un constructor estático inicia una excepción y no existe una cláusula catch compatible para capturarla.
 
 ---
 #### Arreglos y colecciones
