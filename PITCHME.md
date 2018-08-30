@@ -618,44 +618,112 @@ try {
 ```
 
 ---
-##### [Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
 
-Excepción | Description
-----------|------------
-ArithmeticException | Una clase base para las excepciones que se producen durante las operaciones aritméticas, como DivideByZeroException y OverflowException.
-ArrayTypeMismatchException | Se inicia cuando una matriz no puede almacenar un elemento determinado porque el tipo real del elemento es incompatible con el tipo real de la matriz.
+##### [Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
 
 ---
-##### [Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
-
-Excepción | Description
-----------|------------
-DivideByZeroException | Se inicia cuando se intenta dividir un valor entero entre cero.
-IndexOutOfRangeException | Se inicia cuando se intenta indexar una matriz y el índice es menor que cero o queda fuera de los límites de la matriz.
-
+```
+//DivideByZeroException Class
+int number1 = 3000;
+int number2 = 0;
+try
+{
+    Console.WriteLine(number1 / number2);
+}
+catch (DivideByZeroException)
+{
+    Console.WriteLine("Division of {0} by zero.", number1);
+}
+```
 ---
-##### [Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
 
-Excepción | Description
-----------|------------
-InvalidCastException | Se inicia cuando se produce un error en una conversión explícita de un tipo base en una interfaz o un tipo derivado en tiempo de ejecución.
-NullReferenceException | Se inicia cuando se intenta hacer referencia a un objeto cuyo valor es null.
+```
+//OverflowException Class 
+int value = 780000000;
+checked
+{
+    try
+    {
+        // Square the original value.
+        int square = value * value;
+        Console.WriteLine("{0} ^ 2 = {1}", value, square);
+    }
+    catch (OverflowException)
+    {
+        double square = Math.Pow(value, 2);
+        Console.WriteLine("Exception: {0} > {1:E}.",
+                          square, Int32.MaxValue);
+    }
+}
+// The example displays the following output:
+//       Exception: 6.084E+17 > 2.147484E+009.
 
+```
 ---
-##### [Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
+```
+//ArrayTypeMismatchException Class
 
-Excepción | Description
-----------|------------
-OutOfMemoryException | Se inicia cuando se produce un error al intentar asignar memoria con el operador new. Indica que se ha agotado la memoria disponible para el entorno Common Language Runtime.
-OverflowException | Se inicia cuando se desborda una operación aritmética en un contexto checked.
+string[] names = { "Dog", "Cat", "Fish" };
+Object[] objs = (Object[])names;
 
+try
+{
+    objs[2] = "Mouse";
+
+    foreach (object animalName in objs)
+    {
+        System.Console.WriteLine(animalName);
+    }
+}
+catch (System.ArrayTypeMismatchException)
+{
+    // Not reached; "Mouse" is of the correct type.
+    System.Console.WriteLine("Exception Thrown.");
+}
+
+try
+{
+    Object obj = (Object)13;
+    objs[2] = obj;
+}
+catch (System.ArrayTypeMismatchException)
+{
+    // Always reached, 13 is not a string.
+    System.Console.WriteLine(
+        "New element is not of the correct type.");
+}
+
+// Set objs to an array of objects instead of 
+// an array of strings.
+objs = new Object[3];
+try
+{
+    objs[0] = (Object)"Turtle";
+    objs[1] = (Object)12;
+    objs[2] = (Object)2.341;
+
+    foreach (object element in objs)
+    {
+        System.Console.WriteLine(element);
+    }
+}
+catch (System.ArrayTypeMismatchException)
+{
+    // ArrayTypeMismatchException is not thrown this time.
+    System.Console.WriteLine("Exception Thrown.");
+}
+
+```
 ---
-##### [Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
+```
+// IndexOutOfRangeException Class 
 
-Excepción | Description
-----------|------------
-StackOverflowException | Se inicia cuando se agota la pila de ejecución por tener demasiadas llamadas a métodos pendientes. Normalmente, indica una recursividad muy profunda o infinita.
-TypeInitializationException | Se inicia cuando un constructor estático inicia una excepción y no existe una cláusula catch compatible para capturarla.
+List<Char> characters = new List<Char>();
+characters.InsertRange(0, new Char[] { 'a', 'b', 'c', 'd', 'e', 'f' });
+for (int ctr = 0; ctr <= characters.Count; ctr++)
+    Console.Write("'{0}'    ", characters[ctr]);
+	
+```
 ---
 ### Questions?
 
