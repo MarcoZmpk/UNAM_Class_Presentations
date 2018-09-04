@@ -813,6 +813,41 @@ Estructura de un arreglo con longitud 4
 |Índice|0|1|2|3|
 
 ---
+##### [Arreglos](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/)
+
+###### Declaración de un arreglo
+
+```
+dataType[] nombreDelArreglo;
+int[] calificaciones;
+```
+
+###### Inicialización de un arreglo
+```
+dataType[] nombreDelArreglo = new dataType[número de elementos];
+int[] calificaciones = new int[5];
+```
+---
+##### [Arreglos](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/)
+
+###### Asignación de valores a un arreglo
+
+```
+nombreDelArreglo[índice] = valor;
+
+calificaciones[0]= 90;
+calificaciones[1]= 50;
+```
+
+###### Lectura de valores a un arreglo
+
+```
+nombreDelArreglo[índice];
+calificaciones[1];
+
+```
+
+---
 ### *Examen 3 09/04/2018* 
 
 ###### Dado el programa en el siguiente [link]() obtenga el área de un triangulo, un rectángulo y un circulo, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
