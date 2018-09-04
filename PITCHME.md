@@ -800,6 +800,19 @@ public string Name
 }   
 ```
 ---
+##### [Arreglos](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/)
+
+* Almacena una colección de elementos determinada y secuencial
+* Solo se pueden almacenar elementos de un mismo tipo
+* Pueden ser de todos los tipos: int, string, object, etc.
+
+Estructura de un arreglo con longitud 4
+
+|Valores|45|2|25|545|
+|---|---|---|---|---|
+|Índice|0|1|2|3|
+
+---
 ### *Examen 3 09/04/2018* 
 
 ###### Dado el programa en el siguiente [link]() obtenga el área de un triangulo, un rectángulo y un circulo, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
