@@ -725,6 +725,88 @@ for (int ctr = 0; ctr <= characters.Count; ctr++)
 	
 ```
 ---
+##### [Excepciones generadas por el compilador](https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/exceptions/compiler-generated-exceptions)
+
+###### [throw](https://docs.microsoft.com/es-mx/dotnet/csharp/language-reference/keywords/throw)
+
+```
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            GeneradorDeNumeros Gnum = new GeneradorDeNumeros();
+
+            Console.WriteLine(Convert.ToString(Gnum.GetNumero(2)));
+            Console.Read();
+        }
+    }
+		
+	class GeneradorDeNumeros
+    {
+        int[] numeros = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
+
+        public int GetNumero(int indice)
+        {
+            if (indice < 0 || indice >= numeros.Length)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            return numeros[indice];
+        }
+    }
+		
+```
+---
+###### [Operador Condicional **?**](https://docs.microsoft.com/es-mx/dotnet/csharp/language-reference/operators/conditional-operator)
+
+```
+int input = Convert.ToInt32(Console.ReadLine());  
+string classify;  
+
+// if-else construction.  
+if (input > 0)  
+    classify = "positive";  
+else  
+    classify = "negative";  
+
+// ?: conditional operator.  
+classify = (input > 0) ? "positive" : "negative";
+```
+---
+
+###### [throw](https://docs.microsoft.com/es-mx/dotnet/csharp/language-reference/keywords/throw)
+
+```
+private static void DisplayFirstNumber(string[] args)
+{
+   string arg = args.Length >= 1 ? args[0] : 
+                              throw new ArgumentException("You must supply an argument");
+   if (Int64.TryParse(arg, out var number))
+      Console.WriteLine($"You entered {number:F0}");
+   else
+      Console.WriteLine($"{arg} is not a number.");                            
+}
+```
+---
+###### [throw](https://docs.microsoft.com/es-mx/dotnet/csharp/language-reference/keywords/throw)
+
+```
+public string Name
+{
+    get => name;
+    set => name = value ?? 
+        throw new ArgumentNullException("Name cannot be null", nameof(value));
+}   
+```
+---
+### *Examen 3 09/04/2018* 
+
+###### Dado el programa en el siguiente [link]() obtenga el área de un triangulo, un rectángulo y un circulo, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
+###### El programa debe de utilizar la sobrecarga de operadores vista en clase.
+###### Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
+###### Enviar el link al repositorio mediante el classroom de google.
+---
 ### Questions?
 
 <br>
