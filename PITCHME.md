@@ -844,13 +844,14 @@ calificaciones[1]= 50;
 ```
 nombreDelArreglo[índice];
 calificaciones[1];
-
 ```
+---
+
 
 ---
 ### *Examen 3 09/04/2018* 
 
-###### Dado el programa en el siguiente [link]() obtenga el área de un triangulo, un rectángulo y un circulo, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
+###### Dado el programa en el siguiente [link](https://github.com/lusan12/ExamenesTP/tree/master/EXAM2) obtenga el área de un triangulo, un rectángulo y un circulo, a partir de valores proporcionados por el usuario y mostrando los resultados correspondientes en pantalla
 ###### El programa debe de utilizar la sobrecarga de operadores vista en clase.
 ###### Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
 ###### Enviar el link al repositorio mediante el classroom de google.
