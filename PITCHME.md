@@ -1076,7 +1076,8 @@ static void Print2DArray(int[,] arr)
 }
 ```
 ---
-##### [Colecciones](https://msdn.microsoft.com/es-es/library/ybcx56wz(v=vs.120).aspx)
+#### Colecciones
+https://msdn.microsoft.com/es-es/library/ybcx56wz(v=vs.120).aspx
 
 En muchas aplicaciones se desea poder crear y administrar grupos de objetos relacionados. Existen dos formas de agrupar objetos: mediante la creación de matrices de objetos y mediante la creación de colecciones de objetos. 
  
