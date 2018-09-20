@@ -1076,6 +1076,164 @@ static void Print2DArray(int[,] arr)
 }
 ```
 ---
+##### [Colecciones](https://msdn.microsoft.com/es-es/library/ybcx56wz(v=vs.120).aspx)
+
+En muchas aplicaciones se desea poder crear y administrar grupos de objetos relacionados. Existen dos formas de agrupar objetos: mediante la creación de matrices de objetos y mediante la creación de colecciones de objetos. 
+ 
+Las colecciones proporcionan un método más flexible para trabajar con grupos de objetos. A diferencia de las matrices, el grupo de objetos con el que trabaja puede aumentar y reducirse dinámicamente a medida que cambian las necesidades de la aplicación.
+
+---
+##### [List](https://docs.microsoft.com/es-es/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=netframework-4.7.2)
+
+Representa una lista de objetos fuertemente tipados a la que se puede obtener acceso por índice. Proporciona métodos para buscar, ordenar y manipular listas.
+
+---
+##### [Queue](https://docs.microsoft.com/es-es/dotnet/api/system.collections.generic.queue-1?redirectedfrom=MSDN&view=netframework-4.7.2)
+
+Representa una colección de objetos de tipo primero en entrar, primero en salir.
+
+---
+##### [Stack](https://docs.microsoft.com/es-es/dotnet/api/system.collections.generic.stack-1?redirectedfrom=MSDN&view=netframework-4.7.2)
+
+Representa una colección último en entrar, primero en salir (LIFO) de tamaño variable con instancias del mismo tipo especificado.
+
+---
+##### [Interfaces](https://docs.microsoft.com/es-mx/dotnet/csharp/programming-guide/interfaces/)
+
+Una interfaz se define como un contrato sintáctico que deben seguir todas las clases que heredan la interfaz. La interfaz define la parte **qué** del contrato sintáctico y las clases derivadas definen la parte **cómo** del contrato sintáctico.
+---
+###### [Declarando Interfaces](https://www.tutorialspoint.com/csharp/csharp_interfaces.htm)
+
+Defina una interfaz mediante la palabra clave **interface**
+
+```
+public interface ITransactions {
+   // interface members
+   void showTransaction();
+   double getAmount();
+}
+```
+
+Por convención, los nombres de interfaz comienzan con una letra **I** mayúscula.
+
+---
+###### Ejemplos
+```
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System;
+
+namespace InterfaceApplication {
+   
+   public interface ITransactions {
+      // interface members
+      void showTransaction();
+      double getAmount();
+   }
+   public class Transaction : ITransactions {
+      private string tCode;
+      private string date;
+      private double amount;
+      
+      public Transaction() {
+         tCode = " ";
+         date = " ";
+         amount = 0.0;
+      }
+      public Transaction(string c, string d, double a) {
+         tCode = c;
+         date = d;
+         amount = a;
+      }
+      public double getAmount() {
+         return amount;
+      }
+      public void showTransaction() {
+         Console.WriteLine("Transaction: {0}", tCode);
+         Console.WriteLine("Date: {0}", date);
+         Console.WriteLine("Amount: {0}", getAmount());
+      }
+   }
+   class Tester {
+     
+      static void Main(string[] args) {
+         Transaction t1 = new Transaction("001", "8/10/2012", 78900.00);
+         Transaction t2 = new Transaction("002", "9/10/2012", 451900.00);
+         
+         t1.showTransaction();
+         t2.showTransaction();
+         Console.ReadKey();
+      }
+   }
+}
+```
+---
+###### Ejemplos
+```
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System;
+
+namespace InterfaceApplication {
+   
+   public interface ITransactions {
+      // interface members
+      void showTransaction();
+      double getAmount();
+   }
+   public class Transaction : ITransactions {
+      private string tCode;
+      private string date;
+      private double amount;
+      
+      public Transaction() {
+         tCode = " ";
+         date = " ";
+         amount = 0.0;
+      }
+      public Transaction(string c, string d, double a) {
+         tCode = c;
+         date = d;
+         amount = a;
+      }
+      public double getAmount() {
+         return amount;
+      }
+      public void showTransaction() {
+         Console.WriteLine("Transaction: {0}", tCode);
+         Console.WriteLine("Date: {0}", date);
+         Console.WriteLine("Amount: {0}", getAmount());
+      }
+   }
+   class Tester {
+     
+      static void Main(string[] args) {
+         Transaction t1 = new Transaction("001", "8/10/2012", 78900.00);
+         Transaction t2 = new Transaction("002", "9/10/2012", 451900.00);
+         
+         t1.showTransaction();
+         t2.showTransaction();
+         Console.ReadKey();
+      }
+   }
+}
+```
+---
+##### [Interfaces](https://docs.microsoft.com/es-mx/dotnet/csharp/programming-guide/interfaces/)
+
+Resumen de interfaces
+
+Una interfaz tiene las propiedades siguientes:
+
+* Una interfaz es como una clase base abstracta. Cualquier clase o estructura que implementa la interfaz debe implementar todos sus miembros.
+* No se puede crear una instancia de una interfaz directamente. Sus miembros se implementan por medio de cualquier clase o estructura que implementa la interfaz.
+* Las interfaces pueden contener eventos, indizadores, métodos y propiedades.
+* Las interfaces no contienen ninguna implementación de métodos.
+* Una clase o estructura puede implementar varias interfaces. Una clase puede heredar una clase base y también implementar una o varias interfaces.
+
+---
 ### Questions?
 
 <br>
@@ -1083,8 +1241,7 @@ static void Print2DArray(int[,] arr)
 @fa[envelope gp-contact](zmpk.fi@gmail.com)
 
 @fa[github gp-contact](MarcoZmpk)
----
-#### Arreglos y colecciones
+
 
 ---
 #### Implementación de interfaces
