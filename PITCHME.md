@@ -1164,7 +1164,7 @@ namespace InterfaceApplication {
          
          t1.showTransaction();
          t2.showTransaction();
-         Console.ReadKey();
+         Console.ReadLine();
       }
    }
 }
@@ -1172,54 +1172,84 @@ namespace InterfaceApplication {
 ---
 ###### Ejemplos
 ```
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System;
+    class Program
+    {
+        public interface INotifications
+        {
+            void showNotifications();
+            string getDate();
+        }
 
-namespace InterfaceApplication {
-   
-   public interface ITransactions {
-      // interface members
-      void showTransaction();
-      double getAmount();
-   }
-   public class Transaction : ITransactions {
-      private string tCode;
-      private string date;
-      private double amount;
-      
-      public Transaction() {
-         tCode = " ";
-         date = " ";
-         amount = 0.0;
-      }
-      public Transaction(string c, string d, double a) {
-         tCode = c;
-         date = d;
-         amount = a;
-      }
-      public double getAmount() {
-         return amount;
-      }
-      public void showTransaction() {
-         Console.WriteLine("Transaction: {0}", tCode);
-         Console.WriteLine("Date: {0}", date);
-         Console.WriteLine("Amount: {0}", getAmount());
-      }
-   }
-   class Tester {
-     
-      static void Main(string[] args) {
-         Transaction t1 = new Transaction("001", "8/10/2012", 78900.00);
-         Transaction t2 = new Transaction("002", "9/10/2012", 451900.00);
-         
-         t1.showTransaction();
-         t2.showTransaction();
-         Console.ReadKey();
-      }
-   }
-}
+        public class NotificationEspañol : INotifications
+        {
+            private string sender;
+            private string message;
+            private string date;
+
+            public NotificationEspañol(string mySender, string myMessage, string myDate)
+            {
+                this.sender = mySender;
+                this.message = myMessage;
+                this.date = myDate;
+            }
+
+            public void showNotifications()
+            {
+                Console.WriteLine("Message {0} - was sent by {1} - at {2}", message, sender, date);
+            }
+
+            public string getDate()
+            {
+                return date;
+            }
+        }
+
+        public class Notification : INotifications
+        {
+            private string sender;
+            private string message;
+            private string date;
+
+            public Notification()
+            {
+                sender = "Admin";
+                message = "Yo, what's up?";
+                date = "";
+            }
+
+            public Notification(string mySender, string myMessage, string myDate)
+            {
+                this.sender = mySender;
+                this.message = myMessage;
+                this.date = myDate;
+            }
+
+            public void showNotifications()
+            {
+                Console.WriteLine("Message {0} - was sent by {1} - at {2}", message, sender, date);
+            }
+
+            public string getDate()
+            {
+                return date;
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            Notification n1 = new Notification("Denis", "Tsup bro?","12.06.2018");
+            Notification n2 = new Notification("Frank", "All good", "12.06.2018");
+            NotificationEspañol n3 = new NotificationEspañol("Zmpk", "Hola hermano", "19092018");
+            NotificationEspañol n4 = new NotificationEspañol("Marco", "Hola Hola", "19092018");
+
+            n1.showNotifications();
+            n2.showNotifications();
+            n3.showNotifications();
+            n4.showNotifications();
+
+            Console.ReadLine();
+        }
+    }
 ```
 ---
 ##### [Interfaces](https://docs.microsoft.com/es-mx/dotnet/csharp/programming-guide/interfaces/)
