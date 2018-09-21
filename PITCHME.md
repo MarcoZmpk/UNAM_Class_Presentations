@@ -1239,8 +1239,8 @@ namespace InterfaceApplication {
         {
             Notification n1 = new Notification("Denis", "Tsup bro?","12.06.2018");
             Notification n2 = new Notification("Frank", "All good", "12.06.2018");
-            NotificationEspañol n3 = new NotificationEspañol("Zmpk", "Hola hermano", "19092018");
-            NotificationEspañol n4 = new NotificationEspañol("Marco", "Hola Hola", "19092018");
+            NotificationEspañol n3 = new NotificationEspañol("Milton", "Hola hermano", "19092018");
+            NotificationEspañol n4 = new NotificationEspañol("Charly", "Hola Hola", "19092018");
 
             n1.showNotifications();
             n2.showNotifications();
