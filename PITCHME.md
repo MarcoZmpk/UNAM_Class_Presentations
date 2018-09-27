@@ -1240,7 +1240,7 @@ namespace InterfaceApplication {
             Notification n1 = new Notification("Denis", "Tsup bro?","12.06.2018");
             Notification n2 = new Notification("Frank", "All good", "12.06.2018");
             NotificationEspañol n3 = new NotificationEspañol("Milton", "Hola hermano", "19092018");
-            NotificationEspañol n4 = new NotificationEspañol("Charly", "Hola Hola", "19092018");
+            NotificationEspañol n4 = new NotificationEspañol("Charly", "Hola todo bien", "19092018");
 
             n1.showNotifications();
             n2.showNotifications();
@@ -1252,7 +1252,7 @@ namespace InterfaceApplication {
     }
 ```
 ---
-##### [Interfaces](https://docs.microsoft.com/es-mx/dotnet/csharp/programming-guide/interfaces/)
+##### [Implementación de interfaces](https://docs.microsoft.com/es-mx/dotnet/csharp/programming-guide/interfaces/)
 
 Resumen de interfaces
 
@@ -1265,6 +1265,100 @@ Una interfaz tiene las propiedades siguientes:
 * Una clase o estructura puede implementar varias interfaces. Una clase puede heredar una clase base y también implementar una o varias interfaces.
 
 ---
+Ejemplo
+```
+    class Program
+    {
+        public interface INotifications
+        {
+            void showNotifications();
+            string getDate();
+        }
+
+        public class NotificationEspañol : INotifications
+        {
+            private string sender;
+            private string message;
+            private string date;
+
+            public NotificationEspañol(string mySender, string myMessage, string myDate)
+            {
+                this.sender = mySender;
+                this.message = myMessage;
+                this.date = myDate;
+            }
+
+            public void showNotifications()
+            {
+                Console.WriteLine("Message {0} - was sent by {1} - at {2}", message, sender, date);
+            }
+
+            public string getDate()
+            {
+                return date;
+            }
+        }
+
+        public class Notification : INotifications
+        {
+            private string sender;
+            private string message;
+            private string date;
+
+            public Notification()
+            {
+                sender = "Admin";
+                message = "Yo, what's up?";
+                date = "";
+            }
+
+            public Notification(string mySender, string myMessage, string myDate)
+            {
+                this.sender = mySender;
+                this.message = myMessage;
+                this.date = myDate;
+            }
+
+            public void showNotifications()
+            {
+                Console.WriteLine("Message {0} - was sent by {1} - at {2}", message, sender, date);
+            }
+
+            public string getDate()
+            {
+                return date;
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            Notification n1 = new Notification("Denis", "Tsup bro?","12.06.2018");
+            Notification n2 = new Notification("Frank", "All good", "12.06.2018");
+            NotificationEspañol n3 = new NotificationEspañol("Jorge", "Hola hermano", "19092018");
+            NotificationEspañol n4 = new NotificationEspañol("David", "Hola Hola", "19092018");
+
+            n1.showNotifications();
+            n2.showNotifications();
+            n3.showNotifications();
+            n4.showNotifications();
+
+            Console.ReadLine();
+        }
+    }
+```	
+---
+### *Examen 3 09/25/2018* 
+
+###### Descargue y genere un proyecto nuevo con el siguiente código [link](https://github.com/MarcoZmpk/UNAM_FI_TDP_2018/tree/master/Examen3) 
+###### El objetivo es utilizar leer desde nuestra aplicación los archivos txt y mostrar la información indicada por el profesor en un DataGrid
+###### Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
+###### Enviar el link al repositorio mediante el classroom de google.
+---
+####[Manejadores de eventos](https://docs.microsoft.com/es-es/dotnet/standard/events/)
+
+Los eventos de .NET Framework se basan en un modelo de delegado. El modelo de delegado sigue el patrón de diseño del observador, que permite que un suscriptor se registre con un proveedor y reciba notificaciones de dicho proveedor. El emisor de un evento inserta una notificación de que se ha producido un evento, y un receptor de eventos recibe la notificación y define una respuesta a la misma.
+
+---
 ### Questions?
 
 <br>
@@ -1272,13 +1366,6 @@ Una interfaz tiene las propiedades siguientes:
 @fa[envelope gp-contact](zmpk.fi@gmail.com)
 
 @fa[github gp-contact](MarcoZmpk)
-
-
----
-#### Implementación de interfaces
-
----
-#### Manejadores de eventos
 
 ---
 #### Construcción de bibliotecas y reutilización de código
