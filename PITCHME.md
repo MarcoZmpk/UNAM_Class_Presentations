@@ -1290,6 +1290,9 @@ Normalmente, para generar un evento, se agrega un método marcado como protected
 El método debe tomar un parámetro que especifica un objeto de datos de evento. Este método se proporciona para permitir que las clases derivadas reemplacen la lógica para generar el evento. Una clase derivada siempre debería llamar al método OnEventName de la clase base para asegurarse de que los delegados registrados reciben el evento.
 ```
 ---
+#### [Controladores de eventos](https://docs.microsoft.com/es-es/dotnet/standard/events/)
+
+Para responder a un evento, se define un método controlador de eventos en el receptor de eventos. Este método debe coincidir con la signatura del delegado del evento que se está controlando. En el controlador de eventos, se realizan las acciones que es necesario llevar a cabo cuando se genera el evento, como recopilar los datos proporcionados por el usuario cuando este hace clic en un botón. Para recibir notificaciones cuando se genera el evento, el método controlador de eventos debe suscribirse al evento
 ---
 ###### Ejemplos
 ```
