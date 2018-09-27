@@ -1284,9 +1284,11 @@ Un evento es un mensaje que envía un objeto cuando ocurre una acción. La acci�
 #### [Evento](https://docs.microsoft.com/es-es/dotnet/standard/events/)
 - Para definir un evento, se utiliza la palabra clave **event** en la signatura de la clase de eventos y se especifica el tipo de delegado para el evento
 
-- Normalmente, para generar un evento, se agrega un método marcado como protected y virtual (en C#). Asigne a este método el nombre OnEventName; por ejemplo, OnDataReceived.
+```
+Normalmente, para generar un evento, se agrega un método marcado como protected y virtual (en C#). Asigne a este método el nombre OnEventName; por ejemplo, OnDataReceived.
 
-- El método debe tomar un parámetro que especifica un objeto de datos de evento. Este método se proporciona para permitir que las clases derivadas reemplacen la lógica para generar el evento. Una clase derivada siempre debería llamar al método OnEventName de la clase base para asegurarse de que los delegados registrados reciben el evento.
+El método debe tomar un parámetro que especifica un objeto de datos de evento. Este método se proporciona para permitir que las clases derivadas reemplacen la lógica para generar el evento. Una clase derivada siempre debería llamar al método OnEventName de la clase base para asegurarse de que los delegados registrados reciben el evento.
+```
 ---
 ---
 ###### Ejemplos
