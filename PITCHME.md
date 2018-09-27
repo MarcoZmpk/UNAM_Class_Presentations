@@ -1265,99 +1265,142 @@ Una interfaz tiene las propiedades siguientes:
 * Una clase o estructura puede implementar varias interfaces. Una clase puede heredar una clase base y también implementar una o varias interfaces.
 
 ---
-Ejemplo
-```
-    class Program
-    {
-        public interface INotifications
-        {
-            void showNotifications();
-            string getDate();
-        }
-
-        public class NotificationEspañol : INotifications
-        {
-            private string sender;
-            private string message;
-            private string date;
-
-            public NotificationEspañol(string mySender, string myMessage, string myDate)
-            {
-                this.sender = mySender;
-                this.message = myMessage;
-                this.date = myDate;
-            }
-
-            public void showNotifications()
-            {
-                Console.WriteLine("Message {0} - was sent by {1} - at {2}", message, sender, date);
-            }
-
-            public string getDate()
-            {
-                return date;
-            }
-        }
-
-        public class Notification : INotifications
-        {
-            private string sender;
-            private string message;
-            private string date;
-
-            public Notification()
-            {
-                sender = "Admin";
-                message = "Yo, what's up?";
-                date = "";
-            }
-
-            public Notification(string mySender, string myMessage, string myDate)
-            {
-                this.sender = mySender;
-                this.message = myMessage;
-                this.date = myDate;
-            }
-
-            public void showNotifications()
-            {
-                Console.WriteLine("Message {0} - was sent by {1} - at {2}", message, sender, date);
-            }
-
-            public string getDate()
-            {
-                return date;
-            }
-        }
-
-        static void Main(string[] args)
-        {
-            Notification n1 = new Notification("Denis", "Tsup bro?","12.06.2018");
-            Notification n2 = new Notification("Frank", "All good", "12.06.2018");
-            NotificationEspañol n3 = new NotificationEspañol("Jorge", "Hola hermano", "19092018");
-            NotificationEspañol n4 = new NotificationEspañol("David", "Hola Hola", "19092018");
-
-            n1.showNotifications();
-            n2.showNotifications();
-            n3.showNotifications();
-            n4.showNotifications();
-
-            Console.ReadLine();
-        }
-    }
-```	
----
 ### *Examen 3 09/25/2018* 
 
-###### Descargue y genere un proyecto nuevo con el siguiente código [link](https://github.com/MarcoZmpk/UNAM_FI_TDP_2018/tree/master/Examen3) 
-###### El objetivo es utilizar leer desde nuestra aplicación los archivos txt y mostrar la información indicada por el profesor en un DataGrid
-###### Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
-###### Enviar el link al repositorio mediante el classroom de google.
+			###### Descargue y genere un proyecto nuevo con el siguiente código [link](https://github.com/MarcoZmpk/UNAM_FI_TDP_2018/tree/master/Examen3) 
+			###### El objetivo es utilizar leer desde nuestra aplicación los archivos txt y mostrar la información indicada por el profesor en un DataGrid
+			###### Al terminar el examen subir el programa a un repositorio personal y los resultados de las pruebas en un archivo txt a un repositorio personal llamado *Examenes*
+			###### Enviar el link al repositorio mediante el classroom de google.
 ---
-####[Manejadores de eventos](https://docs.microsoft.com/es-es/dotnet/standard/events/)
+#### [Manejadores de eventos](https://docs.microsoft.com/es-es/dotnet/standard/events/)
 
 Los eventos de .NET Framework se basan en un modelo de delegado. El modelo de delegado sigue el patrón de diseño del observador, que permite que un suscriptor se registre con un proveedor y reciba notificaciones de dicho proveedor. El emisor de un evento inserta una notificación de que se ha producido un evento, y un receptor de eventos recibe la notificación y define una respuesta a la misma.
 
+---
+#### [Evento](https://docs.microsoft.com/es-es/dotnet/standard/events/)
+
+Un evento es un mensaje que envía un objeto cuando ocurre una acción. La acción podría ser debida a la interacción del usuario, como hacer clic en un botón, o podría proceder de cualquier otra lógica del programa, como el cambio del valor de una propiedad. El objeto que provoca el evento se conoce como emisor del evento. El emisor del evento no sabe qué objeto o método recibirá (controlará) los eventos que genera
+---
+#### [Evento](https://docs.microsoft.com/es-es/dotnet/standard/events/)
+Para definir un evento, se utiliza la palabra clave **event** en la signatura de la clase de eventos y se especifica el tipo de delegado para el evento
+
+Normalmente, para generar un evento, se agrega un método marcado como protected y virtual (en C#). Asigne a este método el nombre OnEventName; por ejemplo, OnDataReceived. El método debe tomar un parámetro que especifica un objeto de datos de evento. Este método se proporciona para permitir que las clases derivadas reemplacen la lógica para generar el evento. Una clase derivada siempre debería llamar al método OnEventName de la clase base para asegurarse de que los delegados registrados reciben el evento.
+
+---
+---
+###### Ejemplos
+```
+namespace RaisingEvents
+{
+    public partial class Form1 : Form
+    {
+        int counter = 0;
+        Boolean limit = false;
+        Contador c = new Contador(4);
+
+        public Form1()
+        {
+            InitializeComponent();
+            c.ThresholdReached += c_ThresholdReached;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            counter++;
+            c.Add(counter);
+            if (limit)
+            {
+                if (counter < 5)
+                {
+                    textBox1.Text = counter.ToString();
+
+                }
+                else
+                {
+                    textBox1.Text = 5.ToString();
+                    counter = 5;
+                }
+            }
+            else
+            {
+                if (counter < 10)
+                {
+                    textBox1.Text = counter.ToString();
+                }
+                else
+                {
+                    textBox1.Text = 10.ToString();
+                    counter = 10;
+                }
+            }           
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            textBox1.Text = trackBar1.Value.ToString();
+            counter = trackBar1.Value;
+            c.Add(counter);
+            if (counter < 4)
+            {
+                this.pictureBox1.Image = Properties.Resources.Green;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            limit = checkBox1.Checked;
+            if (limit)
+            {
+                trackBar1.Maximum = 5;
+            }
+            else
+            {
+                trackBar1.Maximum = 10;
+            }
+        }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            trackBar1.Value = counter;
+        }
+
+        public void c_ThresholdReached(object sender, EventArgs e)
+        {
+            this.pictureBox1.Image = Properties.Resources.alert;
+        }
+
+    }
+	
+	class Contador
+    {
+        private int threshold;
+
+        public event EventHandler ThresholdReached;
+
+        public Contador(int passedThreshold)
+        {
+            threshold = passedThreshold;
+        }
+
+        public void Add(int x)
+        {
+            if (x >= threshold)
+            {
+                OnThresholdReached(EventArgs.Empty);
+            }
+        }
+
+        protected virtual void OnThresholdReached(EventArgs e)
+        {
+            EventHandler handler = ThresholdReached;
+            if (handler != null)
+            {
+                handler(this, e);
+            }
+        }
+    }
+}
+```
 ---
 ### Questions?
 
